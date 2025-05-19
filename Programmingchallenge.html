@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"/>
+    <script src="JavaScript.js"></script>
+    <title>My programming challenges page</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>My programming challenges page </h1>
+        </div>
+
+        <ul>
+            <a href=¨#home¨><li class="menuitems">Home</li></a>
+            <a href=¨#challenges¨><li class="menuitems">Challenges</li></a>
+            <a href="#contribute"><li class="menuitems">Contribute to the crew</li></a>
+            <li class="menuitems"><button class="signinbutton" onclick="location.href='./Login.html'">Sing in </button></li>
+
+        </ul>
+
+    </header>
+    <main>
+
+    <!--this div will countain the text and buttons-->
+</div>
+<div class="banner">
+<div class="bannertext">
+<h2>Welcome to your Programming fundamentals page </h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum ut nostrum voluptas rem atque totam, at animi! Odit, reprehenderit dolore fugiat sed sequi suscipit excepturi non eaque odio ipsum.</p>
+<!--A list that will compile the others two buttons-->
+<ul> 
+    <li class="bannerbuttons"><button onclick="location.href='#Challenges'" class="bannerbutton">Visit Database</button></li>
+    <li class="bannerbuttons"><button onclick="location.href='#crew'" class="bannerbutton">Meet the crew</button></li>
+</ul>
+<div>
+    <!--This div will contain the image-->
+</div>
+<img alt="Technology" src="./images meme.jpeg "
+ div>
+    <h2> Our programming Database</h2>
+    <!--Continer that will contain the cards--> 
+<div class="greatcontainer">
+<!--the card-->
+<div class="card">
+<img class="flowchart" alt="Flowchart" src="./START.png"/>
+    <h5> Yearly Budget problem</h5>
+    <p class="cardtext">In a hospital, we can find three areas: Urgencies, Pediatric and Traumatology.
+        The yearly budget is distributed: Urgencies (37%), Pediatric (42%) and Traumatology (21%). Get the amount of money that each section will receive from a given budget. </p>
+       <button class="cardbuttons" onclick="location.href='./START.png'">View flowchart</button>
+       
+</div>
+    
+    <!--the card-->
+    <div class="card">
+    <img class="flowchart" alt="Flowchart" src="./images 3.jpeg"/>
+        <h5> Master cat</h5>
+        <p class="cardtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dolore autem vero illum saepe quisquam veniam odit, ipsa assumenda. Odit eligendi placeat soluta eum aliquam ex deleniti quaerat aperiam molestias. </p>
+        <button class="cardbuttons" onclick="location.href='./images 3.jpeg'">View cat</button>
+       
+</div>
+
+    <!--the card-->
+    <div class="card">
+    <img class="flowchart" alt="Flowchart" src="Media/START 2 - copia.png">
+        <h5> Restaurant discount</h5>
+        <p class="cardtext">
+            A restaurant offers a discount of 10% if the client consumes until $100 in products and a discount of 20% for higher consumes. For both cases, the tax percentage is 12%. Do a flowchart that can determine the discount value, the tax value and total price. </p>
+            <button class="cardbuttons" onclick="location.href='Media/START 2 - copia.png'">View flowchart</button>
+            
+</div>
+    <div><li><h3>Meet our Crew </h3></li>
+
+    <img class="me" alt="me" src="./R.jpg">
+     <above> <h4> Gregorio Martínez</h2></above>
+     <above> <h5> Professional title</h5></above>
+     <above> <h5> Commodo qui nulla ipsum ea cupidatat sit aliquip</h5></above></div>
+     <div> <above> <h3> Contribute to the project</h3></above></div>
+     <div> <above> <button> More information here</button></above></div>
+
+     <!--this div will contain the banner-->
+<div class="banner" id=¨#challenges¨>
+    <div class=" subscribe">
+        <h2>Do you want more information about our project?</h2>
+        <h4>Type your email and we will send you more information</h4>
+        <form action="javascript:sendGmail(name.value)" method="post">
+            <input type="email" name="email" placeholder="example@gmail.com">
+            <input type="submit" name="sendsubscribe" value="Send">
+            </form>
+            <div><p id="gmailsuccess"></p></div>
+
+ <!--This is the paragraph that will say something if the email was sent successfully.-->
+
+ <div class="gmailconfirmation"><p id="gmailsuccess"></p></div>
+
+
+ <!--Random number created by the program inside of a script tag.-->
+ <script>
+    let random=Math. floor(Math.random()*100);
+ </script>
+ <!--We will create a div that will contain all the elements of the game (texts. inputs, ect...)-->
+ <div class="subscribe">
+    <!--Inside of this, we will create the title of the section, using again previous styles that we've used.-->
+    <h2 class="crewtitle">An additional challenge for you!</h2>
+    <!--A subtitle to notify to the user that have to type a number between 0 and 100 to guess.-->
+    <label for="number">Type a number between 0 and 100. Try to guess the number!</label>
+    <!--We've created here the form to receive the number typed by the user and the button to send the information.-->
+    <!--If you see carefully, in action we have this code. That means, when the user click in the button, will execute the JavaScript
+    function guessNumber (this function will receive two parameters: the number typed by the user and the random number, generated above.)-->
+       <form action="javascript:guessNumber(number.value, random)" method="post">
+        <input type="number" id="number" name="number"/>
+        <input class="subscribebutton" type="submit" name="guess" value="Guess now!"/>
+       </form>
+       <!--This is the paragraph that will say something if the user guessed the number or not.-->
+       <p id="answer"></p>
+ </div>
+</main>
+    </body>
+    </html>
+
+  
+
+
+
+
